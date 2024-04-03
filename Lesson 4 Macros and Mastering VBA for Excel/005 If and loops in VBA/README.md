@@ -9,8 +9,11 @@ In VBA, you must declare variables before using them. Variable declaration speci
 Dim variableName As DataType
 ```
 1. ***Dim:*** Keyword used to declare a variable.
+
 2. ***variableName:*** Name of the variable.
+
 4. ***DataType:*** Type of data the variable can hold (e.g., Integer, String, Double, Boolean, etc.).
+
 ### Initialization:
 Variables can be initialized with an initial value at the time of declaration or later in the code. Initialization assigns an initial value to the variable. 
 ### For example:
