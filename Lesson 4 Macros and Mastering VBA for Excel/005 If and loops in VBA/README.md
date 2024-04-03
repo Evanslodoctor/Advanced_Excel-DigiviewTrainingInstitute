@@ -30,13 +30,13 @@ name = "John"
 ### Data Types:
 VBA supports various data types for variables. Some common data types include:
 
-***Integer:*** Whole numbers between -32,768 and 32,767.
-***Long:*** Whole numbers between -2,147,483,648 and 2,147,483,647.
-***Double:*** Double-precision floating-point numbers.
-***String:*** Text data.
-***Boolean:*** True or False values.
-***Date:*** Date values.
-***Object:*** Reference to an object.
+- ***Integer:*** Whole numbers between -32,768 and 32,767.
+- ***Long:*** Whole numbers between -2,147,483,648 and 2,147,483,647.
+- ***Double:*** Double-precision floating-point numbers.
+- ***String:*** Text data.
+- ***Boolean:*** True or False values.
+- ***Date:*** Date values.
+- ***Object:*** Reference to an object.
 ### Scope:
 The scope of a variable refers to where in the program it can be accessed. There are two main types of variable scope in VBA:
 
