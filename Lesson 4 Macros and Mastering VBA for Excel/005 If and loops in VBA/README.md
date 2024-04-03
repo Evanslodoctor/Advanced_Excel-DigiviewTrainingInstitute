@@ -23,7 +23,7 @@ age = 25
 or
 
 ```vb
-Copy code
+
 Dim name As String
 name = "John"
 ```
