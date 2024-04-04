@@ -169,6 +169,115 @@ End Sub
 ```
 This code will take the value of the currently selected cell, perform any necessary Excel functions on it, and then print the result in the cell adjacent to the selected cell. Make sure that only one cell is selected when running this code, as it expects a single cell selection. If multiple cells are selected, it will display a message box and exit the subroutine.
 
+# Select Case statement
+
+In VBA, the Select Case statement provides a way to handle multiple conditions in a structured and readable manner, similar to a switch-case statement found in other programming languages. Let's make notes on how to use the Select Case statement based on an example:
+
+***Syntax:***
+
+```vb
+Select Case expression
+    Case value1
+        ' Statements to execute if expression equals value1
+    Case value2
+        ' Statements to execute if expression equals value2
+    Case Else
+        ' Statements to execute if expression doesn't match any previous cases
+End Select
+```
+## Explanation:
+
+- expression: The variable or expression whose value you want to compare.
+- Case value1, Case value2, etc.: Specifies the possible values of the expression and the code to execute if the expression matches each value.
+- Case Else: Specifies the default code to execute if the expression doesn't match any of the specified cases.
+Example:
+
+```vb
+Copy code
+Dim day As String
+day = "Monday"
+
+Select Case day
+    Case "Monday"
+        MsgBox "Today is Monday."
+    Case "Tuesday"
+        MsgBox "Today is Tuesday."
+    Case "Wednesday", "Thursday"
+        MsgBox "Today is either Wednesday or Thursday."
+    Case Else
+        MsgBox "Today is not Monday, Tuesday, Wednesday, or Thursday."
+End Select
+```
+### Execution:
+
+- The Select Case statement evaluates the value of the day variable.
+- If day is "Monday", it displays a message indicating that today is Monday.
+- If day is "Tuesday", it displays a message indicating that today is Tuesday.
+- If day is "Wednesday" or "Thursday", it displays a message indicating that today is either Wednesday or Thursday.
+- If day doesn't match any of the specified cases, it displays a default message.
+
+### Multiple Values in a Single Case:
+
+- You can specify multiple values for a single case by separating them with commas.
+
+### Nested Case Statements:
+
+- You can nest Select Case statements within each other to handle more complex scenarios.
+
+### Benefits:
+
+- Provides a cleaner and more readable alternative to nested if-else statements.
+- Simplifies code maintenance and debugging for scenarios involving multiple conditions.
+
+## Nested Select Case Statements:
+```vb
+Dim day As String
+Dim timePeriod As String
+
+day = "Monday"
+timePeriod = "Morning"
+
+Select Case day
+    Case "Monday"
+        Select Case timePeriod
+            Case "Morning"
+                MsgBox "It's Monday morning."
+            Case "Afternoon"
+                MsgBox "It's Monday afternoon."
+            Case "Evening"
+                MsgBox "It's Monday evening."
+        End Select
+    Case "Tuesday"
+        ' Handle Tuesday cases similarly
+    Case Else
+        MsgBox "Today is not Monday or Tuesday."
+End Select
+```
+Combined Conditions within a Single Case Statement:
+```vb
+Dim day As String
+Dim timePeriod As String
+
+day = "Monday"
+timePeriod = "Morning"
+
+Select Case True
+    Case day = "Monday" And timePeriod = "Morning"
+        MsgBox "It's Monday morning."
+    Case day = "Monday" And timePeriod = "Afternoon"
+        MsgBox "It's Monday afternoon."
+    Case day = "Monday" And timePeriod = "Evening"
+        MsgBox "It's Monday evening."
+    ' Handle other day/timePeriod combinations similarly
+    Case Else
+        MsgBox "Today is not Monday or the time period is not specified."
+End Select
+
+```
+### Explanation:
+- Nested Select Case Statements: This approach involves nesting one Select Case statement within another. The outer Select Case statement checks the day, and based on the day, it enters the inner Select Case statement to check the time period.
+
+- Combined Conditions within a Single Case Statement: In this approach, the Select Case statement evaluates the value of the expression True. Each Case statement then contains a condition that checks both the day and the time period using logical operators like And. When the condition evaluates to True, the corresponding code block executes
 # Loops
 
 Loops in VBA allow you to repeat a block of code multiple times. There are mainly two types of loops in VBA: For loops and Do loops. Let's discuss both types:
