@@ -1,4 +1,113 @@
 # Excel Text Functions
+## Excel Text Functions List
+
+### Functions to Remove Extra Characters
+- **CLEAN**: Removes all non-printable characters from a supplied text string
+  - Syntax: `CLEAN(text)`
+  - Example: `=CLEAN("abc#1$%^&*")` returns `"abc1"`
+
+- **TRIM**: Removes duplicate spaces, and spaces at the start and end of a text string
+  - Syntax: `TRIM(text)`
+  - Example: `=TRIM("  hello  ")` returns `"hello"`
+
+### Functions to Convert Between Upper & Lower Case
+- **LOWER**: Converts all characters in a supplied text string to lower case
+  - Syntax: `LOWER(text)`
+  - Example: `=LOWER("Hello World")` returns `"hello world"`
+
+- **PROPER**: Converts all characters in a supplied text string to proper case
+  - Syntax: `PROPER(text)`
+  - Example: `=PROPER("john DOE")` returns `"John Doe"`
+
+- **UPPER**: Converts all characters in a supplied text string to upper case
+  - Syntax: `UPPER(text)`
+  - Example: `=UPPER("hello world")` returns `"HELLO WORLD"`
+
+### Functions to Convert Excel Data Types
+- **BAHTTEXT**: Converts a number into Thai text
+  - Syntax: `BAHTTEXT(number)`
+  - Example: `=BAHTTEXT(1234)` returns `"หนึ่งพันสองร้อยสามสิบสี่"`
+
+- **DOLLAR**: Converts a supplied number into text, using a currency format
+  - Syntax: `DOLLAR(number, decimals)`
+  - Example: `=DOLLAR(1234.5678, 2)` returns `"$1,234.57"`
+
+- **FIXED**: Rounds a supplied number to a specified number of decimal places and converts this into text
+  - Syntax: `FIXED(number, decimals)`
+  - Example: `=FIXED(1234.5678, 2)` returns `"1234.57"`
+
+- **TEXT**: Converts a supplied value into text, using a user-specified format
+  - Syntax: `TEXT(value, format_text)`
+  - Example: `=TEXT(NOW(), "dd-mm-yyyy")` returns the current date in the format "dd-mm-yyyy"
+
+- **VALUE**: Converts a text string into a numeric value
+  - Syntax: `VALUE(text)`
+  - Example: `=VALUE("123")` returns the numeric value `123`
+
+### Converting Between Characters & Numeric Codes
+- **CHAR**: Returns the character that corresponds to a supplied numeric value
+  - Syntax: `CHAR(number)`
+  - Example: `=CHAR(65)` returns `"A"`
+
+- **CODE**: Returns the numeric code for the first character of a supplied string
+  - Syntax: `CODE(text)`
+  - Example: `=CODE("A")` returns `65`
+
+### Cutting Up & Piecing Together Text Strings
+- **CONCAT**: Joins together two or more text strings
+  - Syntax: `CONCAT(text1, [text2], ...)`
+  - Example: `=CONCAT("Hello", " ", "World")` returns `"Hello World"`
+
+- **LEFT**: Returns a specified number of characters from the start of a supplied text string
+  - Syntax: `LEFT(text, num_chars)`
+  - Example: `=LEFT("Hello", 2)` returns `"He"`
+
+- **MID**: Returns a specified number of characters from the middle of a supplied text string
+  - Syntax: `MID(text, start_num, num_chars)`
+  - Example: `=MID("Hello", 2, 3)` returns `"ell"`
+
+- **RIGHT**: Returns a specified number of characters from the end of a supplied text string
+  - Syntax: `RIGHT(text, num_chars)`
+  - Example: `=RIGHT("Hello", 2)` returns `"lo"`
+
+- **REPT**: Returns a string consisting of a supplied text string, repeated a specified number of times
+  - Syntax: `REPT(text, number_times)`
+  - Example: `=REPT("abc", 3)` returns `"abcabcabc"`
+
+- **TEXTJOIN**: Joins together two or more text strings, separated by a delimiter
+  - Syntax: `TEXTJOIN(delimiter, ignore_empty, text1, [text2], ...)`
+  - Example: `=TEXTJOIN(", ", TRUE, "apple", "banana", "orange")` returns `"apple, banana, orange"`
+
+### Information Functions
+- **LEN**: Returns the length of a supplied text string
+  - Syntax: `LEN(text)`
+  - Example: `=LEN("Hello")` returns `5`
+
+- **FIND**: Returns the position of a supplied character or text string from within a supplied text string (case-sensitive)
+  - Syntax: `FIND(find_text, within_text, [start_num])`
+  - Example: `=FIND("e", "Hello")` returns `2`
+
+- **SEARCH**: Returns the position of a supplied character or text string from within a supplied text string (non-case-sensitive)
+  - Syntax: `SEARCH(find_text, within_text, [start_num])`
+  - Example: `=SEARCH("e", "Hello")` returns `2`
+
+- **EXACT**: Tests if two supplied text strings are exactly the same
+  - Syntax: `EXACT(text1, text2)`
+  - Example: `=EXACT("hello", "Hello")` returns `FALSE`
+
+- **T**: Tests whether a supplied value is text
+  - Syntax: `T(value)`
+  - Example: `=T("hello")` returns `"hello"`
+
+### Replacing / Substituting Parts of a Text String
+- **REPLACE**: Replaces all or part of a text string with another string
+  - Syntax: `REPLACE(old_text, start_num, num_chars, new_text)`
+  - Example: `=REPLACE("Hello", 2, 3, "123")` returns `"H123o"`
+
+- **SUBSTITUTE**: Substitutes all occurrences of a search text string within an original text string with the supplied replacement text
+  - Syntax: `SUBSTITUTE(text, old_text, new_text, [instance_num])`
+  - Example
+# More
 
 ## 1. Introduction to Text Functions
 
