@@ -236,3 +236,167 @@ Using the RATE function:
 ## Output:
 
 - The output of the NPER function will be the total number of payment periods required to pay off the loan or reach the financial goal, representing the time required to achieve the goal or pay off the loan.
+
+# Intermediate:
+
+# NPV (Net Present Value)
+
+## Definition:
+
+- The NPV function in Excel calculates the net present value of an investment by discounting the cash flows at a specified rate. It's commonly used in financial analysis to determine the profitability of an investment by comparing the present value of expected cash inflows with the present value of cash outflows.
+
+## Syntax:
+
+```excel
+=NPV(rate, value1, [value2], ...)
+```
+
+1. ***rate:*** The discount rate per period.
+
+2. value1, value2, ...: The series of cash flows representing income and expenses. These values must be entered as a list of cash flows, separated by commas.
+
+## Explanation:
+- The NPV function calculates the net present value of an investment by discounting the future cash flows back to their present value using a specified discount rate. The present value of cash inflows is subtracted from the present value of cash outflows to determine the net present value. A positive NPV indicates that the investment is profitable, while a negative NPV indicates that it is not.
+## Example:
+- Suppose you are considering an investment that will generate cash flows of $1,000 in year 1, $1,500 in year 2, and $2,000 in year 3. The discount rate for the investment is 10%. You want to calculate the net present value of the investment.
+## Using the NPV function:
+```excel
+
+=NPV(10%, 1000, 1500, 2000)
+```
+- This formula calculates the net present value of the investment, given a discount rate of 10% and cash flows of $1,000, $1,500, and $2,000 in years 1, 2, and 3 respectively.
+
+- The result will give you the net present value of the investment.
+
+## Output:
+The output of the NPV function will be the net present value of the investment, representing the difference between the present value of cash inflows and the present value of cash outflows.
+
+# IRR (Internal Rate of Return)
+
+## Definition:
+
+- The IRR function in Excel calculates the internal rate of return for a series of cash flows. It represents the discount rate that makes the net present value of the cash flows equal to zero. IRR is commonly used in financial analysis to evaluate the profitability of an investment or project.
+
+## Syntax:
+
+```excel
+=IRR(values, [guess])
+```
+1. ***values:*** The series of cash flows representing income and expenses. These values must be entered as a list of cash flows, separated by commas.
+
+2. ***guess(optional):*** An initial guess for the internal rate of return. If omitted, Excel uses 0.1 (10%) as the default guess.
+
+# Explanation:
+The IRR function calculates the internal rate of return by finding the discount rate that results in a net present value of zero for the series of cash flows. It uses an iterative approach to approximate the rate. The internal rate of return represents the effective annual return on investment and is used to assess the profitability of projects or investments.
+# Example:
+Suppose you are evaluating an investment project that requires an initial outlay of $10,000 and generates cash inflows of $3,000, $4,000, $5,000, and $6,000 over the next four years. You want to calculate the internal rate of return for the project.
+Using the IRR function:
+```excel
+
+=IRR(-10000, 3000, 4000, 5000, 6000)
+```
+- This formula calculates the internal rate of return for the investment project, given the initial outlay of -$10,000 (negative because it's an outgoing payment) and the subsequent cash inflows of $3,000, $4,000, $5,000, and $6,000.
+
+- The result will give you the internal rate of return for the investment project.
+
+# Output:
+- The output of the IRR function will be the internal rate of return, representing the effective annual return on investment for the project.
+
+# Discounted Net Present Value for a Non-Periodic Series of Cash Flows
+
+## Definition:
+
+- The Discounted Net Present Value (NPV) for a non-periodic series of cash flows is a financial metric used to assess the profitability of an investment or project. It represents the present value of all future cash inflows and outflows, discounted at a specified rate of return.
+
+## Formula:
+
+The formula for calculating the Discounted Net Present Value (NPV) for a non-periodic series of cash flows is as follows:
+
+```excel
+NPV = CF1 / (1 + r)^1 + CF2 / (1 + r)^2 + ... + CFn / (1 + r)^n
+```
+Where:
+
+1. ***NPV*** = Net Present Value.
+
+2. CF1, CF2, ..., CFn = Cash flows for each period.
+
+3. ***r*** = Discount rate or required rate of return.
+
+4. ***n*** = Number of cash flows.
+
+#Example:
+- Suppose you are considering an investment project that requires an initial investment of $10,000. Over the next four years, the project generates cash inflows of $3,000, $4,000, $5,000, and $6,000, respectively. You want to assess the net present value of the project using a discount rate of 10%.
+
+# Using the Formula:
+``` excel
+
+NPV = -10000 + 3000 / (1 + 0.10)^1 + 4000 / (1 + 0.10)^2 + 5000 / (1 + 0.10)^3 + 6000 / (1 + 0.10)^4
+```
+Substitute the cash flows and discount rate into the formula and calculate the NPV.
+## Output:
+- The output of the calculation will be the net present value of the investment project. A positive NPV indicates that the project is expected to generate returns higher than the required rate of return, while a negative NPV suggests the project may not be viable.
+
+
+
+
+
+# Internal Rate of Return for a Non-Periodic Series of Cash Flows
+
+## Definition:
+
+- The Internal Rate of Return (IRR) for a non-periodic series of cash flows is a financial metric used to assess the profitability of an investment or project. It represents the discount rate that makes the net present value (NPV) of the cash flows equal to zero.
+
+## Formula:
+
+The IRR calculation for a non-periodic series of cash flows involves finding the discount rate (r) that satisfies the equation:
+
+```excel
+NPV = CF1 / (1 + r)^1 + CF2 / (1 + r)^2 + ... + CFn / (1 + r)^n = 0
+```
+Where:
+
+NPV = Net Present Value.
+
+CF1, CF2, ..., CFn = Cash flows for each period.
+
+r = Internal Rate of Return.
+
+n = Number of cash flows.
+
+## Example:
+- Suppose you are evaluating an investment opportunity that requires an initial investment of $10,000. Over the next three years, the project generates cash inflows of $4,000, $5,000, and $6,000, respectively. You want to calculate the internal rate of return for this investment.
+
+## Using the Formula:
+To calculate the internal rate of return, you need to find the discount rate (r) that makes the NPV of the cash flows equal to zero. This can be done using iterative methods or built-in functions in spreadsheet software like Excel.
+
+## Output:
+The output of the calculation will be the internal rate of return (IRR) for the investment project. A higher IRR indicates a more profitable investment, as it represents the discount rate at which the project breaks even.
+
+# Cumulative Interest Paid on a Loan Between Two Periods
+
+## Definition:
+
+- Cumulative interest paid on a loan between two periods represents the total amount of interest accrued on a loan from the beginning of the loan term to a specific period. It's essential for borrowers to understand the cumulative interest paid to assess the total cost of borrowing and plan their finances effectively.
+
+## Formula:
+
+To calculate the cumulative interest paid on a loan between two periods, you can use the following formula:
+
+```excel
+Cumulative Interest = Total Payments - Loan Principal
+```
+Where:
+
+Total Payments = Total amount paid towards the loan including both principal and interest.
+
+Loan Principal = Original amount borrowed.
+
+# Example:
+Suppose you take out a loan of $10,000 at an annual interest rate of 6%. The loan term is 5 years, and you make monthly payments. You want to find out the cumulative interest paid on the loan after the first 3 years.
+
+# Using the Formula:
+Calculate the total payments made towards the loan for the first 3 years.
+Subtract the original loan principal from the total payments to find the cumulative interest paid.
+# Output:
+The output of the calculation will be the cumulative interest paid on the loan between the beginning of the loan term and the specified period.
