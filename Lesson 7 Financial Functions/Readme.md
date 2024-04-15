@@ -148,7 +148,6 @@
 
 - The output of the PMT function will be the periodic payment required to pay off the loan or investment, representing the fixed amount to be paid at regular intervals over the specified period.
 
-
 # Interest Rate (RATE)
 
 ## Definition:
@@ -160,31 +159,38 @@
 ```excel
 =RATE(nper, pmt, pv, [fv], [type], [guess])
 ```
-1. ***nper:*** The total number of payment periods.
 
-2. ***pmt:*** The payment made each period. Must remain constant throughout.
+1. **_nper:_** The total number of payment periods.
 
-3. ***pv:*** The present value or principal amount of the investment or loan.
+2. **_pmt:_** The payment made each period. Must remain constant throughout.
 
-4. ***fv(optional):*** The future value or final amount that a series of payments will grow to. If omitted, assumed to be 0.
+3. **_pv:_** The present value or principal amount of the investment or loan.
 
-5. ***type(optional):*** The timing of the payment. 0 for payments at the end of the period (default), 1 for payments at the beginning of the period.
+4. **_fv(optional):_** The future value or final amount that a series of payments will grow to. If omitted, assumed to be 0.
 
-6. ***guess(optional):*** An initial guess at the interest rate. If omitted, assumed to be 10%.
+5. **_type(optional):_** The timing of the payment. 0 for payments at the end of the period (default), 1 for payments at the beginning of the period.
+
+6. **_guess(optional):_** An initial guess at the interest rate. If omitted, assumed to be 10%.
 
 ## Explanation:
+
 -The RATE function calculates the interest rate per period required for an investment or loan based on the provided number of payment periods, the amount of each payment, the present value of the investment or loan, and the future value (if applicable). It assumes that payments are made at regular intervals and remain constant over the entire period. The interest rate represents the rate at which the investment grows or the loan is paid off.
+
 ## Example:
+
 -Suppose you invest $10,000 today in a savings account and plan to make monthly deposits of $200 for the next 5 years. You want to know the annual interest rate required to reach a future value of $20,000.
 Using the RATE function:
+
 ```excel
 =RATE(5*12, -200, -10000, 20000)
 ```
+
 - This formula calculates the annual interest rate required for the investment, given a total of 5*12 = 60 payment periods (5 years * 12 months per year), a monthly deposit of -$200 (negative because it's an outgoing payment), an initial investment of -$10,000 (also negative because it's an outgoing payment), and a future value of $20,000.
 
 - The result will give you the annual interest rate required to reach the desired future value.
 
 ## Output:
+
 - The output of the RATE function will be the interest rate per period required for the investment or loan, representing the rate at which the investment grows or the loan is paid off.
 
 # NPER (Number of Periods)
@@ -199,27 +205,34 @@ Using the RATE function:
 =NPER(rate, pmt, pv, [fv], [type])
 ```
 
-1. ***rate:*** The interest rate per period.
+1. **_rate:_** The interest rate per period.
 
-2. ***pmt:*** The payment made each period. Must remain constant throughout.
+2. **_pmt:_** The payment made each period. Must remain constant throughout.
 
-3. ***pv:*** The present value or principal amount of the loan or investment.
+3. **_pv:_** The present value or principal amount of the loan or investment.
 
-4. ***fv(optional):*** The future value or final amount that a series of payments will grow to. If omitted, assumed to be 0.
+4. **_fv(optional):_** The future value or final amount that a series of payments will grow to. If omitted, assumed to be 0.
 
-5. ***type (optional):*** The timing of the payment. 0 for payments at the end of the period (default), 1 for payments at the beginning of the period.
+5. **_type (optional):_** The timing of the payment. 0 for payments at the end of the period (default), 1 for payments at the beginning of the period.
 
 ## Explanation:
+
 - The NPER function calculates the total number of payment periods required to pay off a loan or reach a financial goal based on the provided interest rate, the amount of each payment, the present value of the loan or investment, and the future value (if applicable). It assumes that payments are made at regular intervals and remain constant over the entire period. The number of periods represents the time required to achieve the financial goal or pay off the loan.
+
 ## Example:
+
 - Suppose you take out a loan of $10,000 with an annual interest rate of 5%. You plan to make monthly payments of $200. You want to know how long it will take to pay off the loan.
+
 ## Using the NPER function:
+
 ```excel
 =NPER(5%/12, -200, -10000)
 ```
+
 - This formula calculates the total number of payment periods required to pay off the loan, given a monthly interest rate of 5%/12 (since it's compounded monthly), a monthly payment of -$200 (negative because it's an outgoing payment), and an initial loan amount of -$10,000 (also negative because it's an outgoing payment).
 
 - The result will give you the total number of months required to pay off the loan.
 
 ## Output:
+
 - The output of the NPER function will be the total number of payment periods required to pay off the loan or reach the financial goal, representing the time required to achieve the goal or pay off the loan.

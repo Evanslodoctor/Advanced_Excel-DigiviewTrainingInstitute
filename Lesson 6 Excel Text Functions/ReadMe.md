@@ -269,3 +269,40 @@ This formula will return "World" because it starts extracting characters from th
 - **Example:** `=TEXTJOIN(", ", TRUE, "apple", "banana", "orange")` returns "apple, banana, orange".
 
 These text functions are powerful tools for manipulating and analyzing text data in Excel.
+
+
+# Intermediate:
+
+# NPV (Net Present Value)
+
+## Definition:
+
+- The NPV function in Excel calculates the net present value of an investment by discounting the cash flows at a specified rate. It's commonly used in financial analysis to determine the profitability of an investment by comparing the present value of expected cash inflows with the present value of cash outflows.
+
+## Syntax:
+
+```excel
+=NPV(rate, value1, [value2], ...)
+```
+
+1. ***rate:*** The discount rate per period.
+
+2. value1, value2, ...: The series of cash flows representing income and expenses. These values must be entered as a list of cash flows, separated by commas.
+
+## Explanation:
+- The NPV function calculates the net present value of an investment by discounting the future cash flows back to their present value using a specified discount rate. The present value of cash inflows is subtracted from the present value of cash outflows to determine the net present value. A positive NPV indicates that the investment is profitable, while a negative NPV indicates that it is not.
+## Example:
+- Suppose you are considering an investment that will generate cash flows of $1,000 in year 1, $1,500 in year 2, and $2,000 in year 3. The discount rate for the investment is 10%. You want to calculate the net present value of the investment.
+## Using the NPV function:
+```excel
+
+=NPV(10%, 1000, 1500, 2000)
+```
+- This formula calculates the net present value of the investment, given a discount rate of 10% and cash flows of $1,000, $1,500, and $2,000 in years 1, 2, and 3 respectively.
+
+- The result will give you the net present value of the investment.
+
+## Output:
+The output of the NPV function will be the net present value of the investment, representing the difference between the present value of cash inflows and the present value of cash outflows.
+
+# IRR (Internal Rate of Return)
