@@ -406,3 +406,31 @@ To calculate the internal rate of return, you need to find the discount rate (r)
 
 ## Output:
 The output of the calculation will be the internal rate of return (IRR) for the investment project. A higher IRR indicates a more profitable investment, as it represents the discount rate at which the project breaks even.
+
+# Cumulative Interest Paid on a Loan Between Two Periods
+
+## Definition:
+
+- Cumulative interest paid on a loan between two periods represents the total amount of interest accrued on a loan from the beginning of the loan term to a specific period. It's essential for borrowers to understand the cumulative interest paid to assess the total cost of borrowing and plan their finances effectively.
+
+## Formula:
+
+To calculate the cumulative interest paid on a loan between two periods, you can use the following formula:
+
+```excel
+Cumulative Interest = Total Payments - Loan Principal
+```
+Where:
+
+Total Payments = Total amount paid towards the loan including both principal and interest.
+
+Loan Principal = Original amount borrowed.
+
+# Example:
+Suppose you take out a loan of $10,000 at an annual interest rate of 6%. The loan term is 5 years, and you make monthly payments. You want to find out the cumulative interest paid on the loan after the first 3 years.
+
+# Using the Formula:
+Calculate the total payments made towards the loan for the first 3 years.
+Subtract the original loan principal from the total payments to find the cumulative interest paid.
+# Output:
+The output of the calculation will be the cumulative interest paid on the loan between the beginning of the loan term and the specified period.
