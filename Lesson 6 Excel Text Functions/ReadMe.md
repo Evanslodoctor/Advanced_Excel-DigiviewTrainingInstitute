@@ -306,3 +306,32 @@ These text functions are powerful tools for manipulating and analyzing text data
 The output of the NPV function will be the net present value of the investment, representing the difference between the present value of cash inflows and the present value of cash outflows.
 
 # IRR (Internal Rate of Return)
+
+## Definition:
+
+- The IRR function in Excel calculates the internal rate of return for a series of cash flows. It represents the discount rate that makes the net present value of the cash flows equal to zero. IRR is commonly used in financial analysis to evaluate the profitability of an investment or project.
+
+## Syntax:
+
+```excel
+=IRR(values, [guess])
+```
+1. ***values:*** The series of cash flows representing income and expenses. These values must be entered as a list of cash flows, separated by commas.
+
+2. ***guess(optional):*** An initial guess for the internal rate of return. If omitted, Excel uses 0.1 (10%) as the default guess.
+
+# Explanation:
+The IRR function calculates the internal rate of return by finding the discount rate that results in a net present value of zero for the series of cash flows. It uses an iterative approach to approximate the rate. The internal rate of return represents the effective annual return on investment and is used to assess the profitability of projects or investments.
+# Example:
+Suppose you are evaluating an investment project that requires an initial outlay of $10,000 and generates cash inflows of $3,000, $4,000, $5,000, and $6,000 over the next four years. You want to calculate the internal rate of return for the project.
+Using the IRR function:
+```excel
+
+=IRR(-10000, 3000, 4000, 5000, 6000)
+```
+- This formula calculates the internal rate of return for the investment project, given the initial outlay of -$10,000 (negative because it's an outgoing payment) and the subsequent cash inflows of $3,000, $4,000, $5,000, and $6,000.
+
+- The result will give you the internal rate of return for the investment project.
+
+# Output:
+- The output of the IRR function will be the internal rate of return, representing the effective annual return on investment for the project.
