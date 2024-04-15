@@ -335,3 +335,74 @@ Using the IRR function:
 
 # Output:
 - The output of the IRR function will be the internal rate of return, representing the effective annual return on investment for the project.
+
+# Discounted Net Present Value for a Non-Periodic Series of Cash Flows
+
+## Definition:
+
+- The Discounted Net Present Value (NPV) for a non-periodic series of cash flows is a financial metric used to assess the profitability of an investment or project. It represents the present value of all future cash inflows and outflows, discounted at a specified rate of return.
+
+## Formula:
+
+The formula for calculating the Discounted Net Present Value (NPV) for a non-periodic series of cash flows is as follows:
+
+```excel
+NPV = CF1 / (1 + r)^1 + CF2 / (1 + r)^2 + ... + CFn / (1 + r)^n
+```
+Where:
+
+1. ***NPV*** = Net Present Value.
+
+2. CF1, CF2, ..., CFn = Cash flows for each period.
+
+3. ***r*** = Discount rate or required rate of return.
+
+4. ***n*** = Number of cash flows.
+
+#Example:
+- Suppose you are considering an investment project that requires an initial investment of $10,000. Over the next four years, the project generates cash inflows of $3,000, $4,000, $5,000, and $6,000, respectively. You want to assess the net present value of the project using a discount rate of 10%.
+
+# Using the Formula:
+``` excel
+
+NPV = -10000 + 3000 / (1 + 0.10)^1 + 4000 / (1 + 0.10)^2 + 5000 / (1 + 0.10)^3 + 6000 / (1 + 0.10)^4
+```
+Substitute the cash flows and discount rate into the formula and calculate the NPV.
+## Output:
+- The output of the calculation will be the net present value of the investment project. A positive NPV indicates that the project is expected to generate returns higher than the required rate of return, while a negative NPV suggests the project may not be viable.
+
+
+
+
+
+# Internal Rate of Return for a Non-Periodic Series of Cash Flows
+
+## Definition:
+
+- The Internal Rate of Return (IRR) for a non-periodic series of cash flows is a financial metric used to assess the profitability of an investment or project. It represents the discount rate that makes the net present value (NPV) of the cash flows equal to zero.
+
+## Formula:
+
+The IRR calculation for a non-periodic series of cash flows involves finding the discount rate (r) that satisfies the equation:
+
+```excel
+NPV = CF1 / (1 + r)^1 + CF2 / (1 + r)^2 + ... + CFn / (1 + r)^n = 0
+```
+Where:
+
+NPV = Net Present Value.
+
+CF1, CF2, ..., CFn = Cash flows for each period.
+
+r = Internal Rate of Return.
+
+n = Number of cash flows.
+
+## Example:
+- Suppose you are evaluating an investment opportunity that requires an initial investment of $10,000. Over the next three years, the project generates cash inflows of $4,000, $5,000, and $6,000, respectively. You want to calculate the internal rate of return for this investment.
+
+## Using the Formula:
+To calculate the internal rate of return, you need to find the discount rate (r) that makes the NPV of the cash flows equal to zero. This can be done using iterative methods or built-in functions in spreadsheet software like Excel.
+
+## Output:
+The output of the calculation will be the internal rate of return (IRR) for the investment project. A higher IRR indicates a more profitable investment, as it represents the discount rate at which the project breaks even.
