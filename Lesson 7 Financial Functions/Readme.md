@@ -400,3 +400,178 @@ Calculate the total payments made towards the loan for the first 3 years.
 Subtract the original loan principal from the total payments to find the cumulative interest paid.
 # Output:
 The output of the calculation will be the cumulative interest paid on the loan between the beginning of the loan term and the specified period.
+
+
+# Advanced:
+
+# Cumulative Principal Paid on a Loan Between Two Periods (CUMPRINC)
+
+## Definition:
+
+- Cumulative principal paid on a loan between two periods represents the total amount of the loan principal that has been repaid from the beginning of the loan term to a specific period. It's essential for borrowers to track the cumulative principal paid to understand how much of the original loan amount has been repaid over time.
+
+## Formula:
+
+To calculate the cumulative principal paid on a loan between two periods, you can use the following formula:
+
+```excel
+Cumulative Principal = Total Payments - Cumulative Interest
+```
+Where:
+
+Total Payments = Total amount paid towards the loan including both principal and interest.
+
+Cumulative Interest = Total interest paid on the loan between the beginning of the loan term and the specified period.
+# Example:
+Suppose you take out a loan of $10,000 at an annual interest rate of 6%. The loan term is 5 years, and you make monthly payments. You want to find out the cumulative principal paid on the loan after the first 3 years.
+
+## Using the Formula:
+Calculate the total payments made towards the loan for the first 3 years.
+Determine the cumulative interest paid on the loan for the first 3 years.
+Subtract the cumulative interest from the total payments to find the cumulative principal paid.
+## Output:
+The output of the calculation will be the cumulative principal paid on the loan between the beginning of the loan term and the specified period.
+
+# Double Declining Balance Depreciation
+
+## Definition:
+
+- Double Declining Balance (DDB) Depreciation is an accelerated depreciation method used to calculate the depreciation expense of an asset. It assumes that the asset loses value more rapidly in the early years of its useful life and decreases gradually over time. The DDB method allows for higher depreciation expenses in the early years, which can be beneficial for tax purposes or reflecting the asset's actual usage pattern.
+
+## Formula:
+
+To calculate depreciation using the Double Declining Balance method, you can use the following formula:
+
+```excel
+Depreciation Expense = (2 * Straight-line depreciation rate) * Book value at the beginning of the period
+```
+Where:
+
+Straight-line depreciation rate = 1 / Useful life of the asset (in periods).
+
+Book value at the beginning of the period = Initial cost of the asset - Accumulated depreciation.
+
+# Example:
+- Suppose you purchase a piece of equipment for $10,000 with an expected useful life of 5 years and no salvage value. To calculate the depreciation expense using the Double Declining Balance method for the first year:
+
+# Calculate the straight-line depreciation rate:
+Straight-line depreciation rate = 1 / 5 years = 0.2 or 20%
+
+Determine the book value at the beginning of the first year:
+Book value = Initial cost - Accumulated depreciation = $10,000 - $0 = $10,000
+
+Calculate the depreciation expense for the first year:
+Depreciation Expense = (2 * 20%) * $10,000 = $4,000
+
+# Output:
+The output of the calculation will be the depreciation expense for the specified period using the Double Declining Balance method.
+
+
+# SLN (Straight-Line Depreciation)
+
+## Definition:
+
+- SLN (Straight-Line Depreciation) is a method used to calculate the depreciation expense of an asset uniformly over its useful life. It assumes that the asset loses value at a constant rate each period. This method is straightforward and widely used for financial reporting purposes.
+
+## Formula:
+
+To calculate depreciation using the Straight-Line Depreciation method, you can use the following formula:
+
+```excel
+Depreciation Expense = (Cost of the asset - Salvage value) / Useful life of the asset
+
+Where:
+
+Cost of the asset: Initial cost of acquiring the asset
+Salvage value: Estimated value of the asset at the end of its useful life
+
+Useful life of the asset: Total number of periods over which the asset is expected to be used
+```
+## Example:
+- Suppose you purchase a piece of machinery for $50,000 with a salvage value of $5,000 and an expected useful life of 5 years. To calculate the depreciation expense using the Straight-Line Depreciation method for each year:
+
+- Determine the depreciable cost:
+Depreciable Cost = Cost of the asset - Salvage value = $50,000 - $5,000 = $45,000
+
+- Calculate the annual depreciation expense:
+Depreciation Expense = Depreciable Cost / Useful life of the asset = $45,000 / 5 years = $9,000 per year
+
+## Output:
+The output of the calculation will be the depreciation expense for each period using the Straight-Line Depreciation method.
+
+SYD (Sum of Years' Digits Depreciation)
+
+# SYD (Sum of Years' Digits Depreciation)
+
+## Definition:
+
+- SYD (Sum of Years' Digits Depreciation) is a method used to calculate the depreciation expense of an asset based on its useful life. This method assumes that assets lose value more rapidly in the earlier years of their useful life and slows down as they approach the end of their useful life. SYD depreciation is calculated using a formula that takes into account the total number of years of an asset's useful life.
+
+## Formula:
+
+To calculate depreciation using the Sum of Years' Digits Depreciation method, you can use the following formula:
+
+```excel
+Depreciation Expense = (Remaining useful life / Sum of years' digits) * (Cost of the asset - Salvage value)
+Where:
+
+Remaining useful life: Number of years left in the asset's useful life at the beginning of the period
+Sum of years' digits: The sum of the digits representing the years of the asset's useful life (e.g., for a 5-year asset, the sum of years' digits would be 1 + 2 + 3 + 4 + 5 = 15)
+Cost of the asset: Initial cost of acquiring the asset
+Salvage value: Estimated value of the asset at the end of its useful life
+Example:
+Suppose you purchase a piece of machinery for $50,000 with a salvage value of $5,000 and an expected useful life of 5 years. To calculate the depreciation expense using the Sum of Years' Digits Depreciation method for each year:
+
+Determine the sum of years' digits:
+Sum of Years' Digits = 1 + 2 + 3 + 4 + 5 = 15
+
+Calculate the depreciation expense for each year:
+
+Year 1: (5 / 15) * ($50,000 - $5,000) = $13,333.33
+Year 2: (4 / 15) * ($50,000 - $5,000) = $10,666.67
+Year 3: (3 / 15) * ($50,000 - $5,000) = $8,000
+Year 4: (2 / 15) * ($50,000 - $5,000) = $5,333.33
+Year 5: (1 / 15) * ($50,000 - $5,000) = $2,666.67
+```
+## Output:
+The output of the calculation will be the depreciation expense for each period using the Sum of Years' Digits Depreciation method.
+
+# DB (Fixed Declining Balance Depreciation)
+
+## Definition:
+
+- DB (Fixed Declining Balance Depreciation) is a method used to calculate the depreciation expense of an asset based on a fixed rate of depreciation applied to the asset's book value. This method assumes that assets lose value more rapidly in the earlier years of their useful life and slows down as they approach the end of their useful life. DB depreciation is calculated using a fixed depreciation rate applied to the remaining book value of the asset each period.
+
+## Formula:
+
+To calculate depreciation using the Fixed Declining Balance Depreciation method, you can use the following formula:
+
+```excel
+Depreciation Expense = Depreciation Rate * Book Value at Beginning of Period
+Where:
+
+Depreciation Rate: Fixed rate of depreciation applied to the asset's book value (expressed as a percentage)
+Book Value at Beginning of Period: The remaining book value of the asset at the beginning of the depreciation period
+Example:
+Suppose you purchase a piece of machinery for $50,000 with a salvage value of $5,000 and an expected useful life of 5 years. You decide to use the Fixed Declining Balance Depreciation method with a depreciation rate of 20% per year. To calculate the depreciation expense for each year:
+
+Calculate the depreciation rate:
+Depreciation Rate = 20% (given)
+
+Determine the book value at the beginning of each period:
+
+Year 1: $50,000
+Year 2: Book Value at End of Year 1 - Depreciation Expense for Year 1
+Year 3: Book Value at End of Year 2 - Depreciation Expense for Year 2
+Year 4: Book Value at End of Year 3 - Depreciation Expense for Year 3
+Year 5: Book Value at End of Year 4 - Depreciation Expense for Year 4
+Calculate the depreciation expense for each year:
+
+Year 1: 20% * $50,000 = $10,000
+Year 2: 20% * (Book Value at End of Year 1) = $8,000
+Year 3: 20% * (Book Value at End of Year 2) = $6,400
+Year 4: 20% * (Book Value at End of Year 3) = $5,120
+Year 5: 20% * (Book Value at End of Year 4) = $4,096
+```
+## Output:
+The output of the calculation will be the depreciation expense for each period using the Fixed Declining Balance Depreciation method.
