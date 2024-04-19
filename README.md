@@ -13,56 +13,123 @@ Upon completion of this course, participants will be able to:
 | 6. Clean and transform data effectively using advanced techniques. |
 | 7. Apply Excel as a powerful tool for business intelligence and reporting. |
 
-## Course Outline:
+|Course Content                           | Topics                                            |
+|----------------------------------|---------------------------------------------------|
+| **Logical and Lookup Functions**| - Lookup Functions:                                |
+|                                  |   - Traditional Lookup                            |
+|                                  |   - Advanced Xlookup                              |
+|                                  |   - Complex Hookup                                |
+|                                  | - Match and Index Functions:                      |
+|                                  |   - Utilizing Match Function                      |
+|                                  |   - Understanding Index Function                  |
+|                                  | - Offset Function:                                |
+|                                  |   - Dynamic Data Manipulation with Offset         |
+| **IF Functions**                 | - Basic IF Function:                              |
+|                                  |   - Conditional Statements                        |
+|                                  | - Logical Operators with IF:                      |
+|                                  |   - AND, OR, NOT                                  |
+|                                  | - Nested IF Functions:                            |
+|                                  |   - Multiple Conditional Logic                    |
+|                                  | - IFAND and IFOR Functions:                       |
+|                                  |   - Efficient Handling of Multiple Conditions     |
+| **Advanced Pivot Tables**        | - Interactive Dashboards:                         |
+|                                  |   - Dynamic Dashboard Creation                   |
+|                                  | - Sorting and Filtering Functions:                |
+|                                  |   - Multi-column Sorting                          |
+|                                  |   - Custom Lists                                  |
+|                                  | - Unique Values Extraction:                       |
+|                                  |   - Utilizing Unique Function                     |
+|                                  | - Dynamic Sorting:                                |
+|                                  |   - Implementation of Sort Function               |
+| **Date and Time Functions**      | - Today and Now Functions:                        |
+|                                  |   - Retrieving Current Date and Time              |
+|                                  | - Workday Calculation:                            |
+|                                  |   - International Workday Conventions             |
+|                                  | - Networkdays Calculation:                        |
+|                                  |   - Working Days Calculation                      |
+|                                  | - Other Date and Time Functions:                  |
+|                                  |   - Datedif, EoMonth, Edate                      |
+| **CSE Array**                    | - CSE Array Formulas:                             |
+|                                  |   - Complex Calculations                          |
+|                                  |   - Array Operations                              |
+| **Power Pivot**                  | - Data Modeling:                                  |
+|                                  |   - Structuring Data                              |
+|                                  | - Analysis:                                       |
+|                                  |   - Advanced Data Analysis Techniques            |
+|                                  | - Reporting with Power Pivot:                     |
+|                                  |   - Creating Reports                              |
+| **Power Query**                  | - Data Transformation:                           |
+|                                  |   - Transforming Data Sources                     |
+|                                  | - Data Preparation:                               |
+|                                  |   - Preparing Data for Analysis                   |
+| **Macros and VBA**               | - Introduction to Macros:                         |
+|                                  |   - Automating Tasks                              |
+|                                  | - VBA for Automation and Extension:               |
+|                                  |   - Extending Excel's Capabilities                |
+| **Text Functions**               | - Text Manipulation:                              |
+|                                  |   - Analyzing and Manipulating Text Data          |
+| **Financial Functions**          | - Financial Analysis and Modeling:                |
+|                                  |   - Utilizing Financial Functions for Analysis    |
 
-### Week 1-2: Advanced Formulas and Functions
+# Course Guide: Advanced Excel
 
-| Topics |
-|---|
-| Nested Functions |
-| Array Formulas |
-| INDEX and MATCH functions |
-| OFFSET and INDIRECT functions |
+## 1: Logical and Lookup Functions
+- **Lookup Functions:**
+  - Understand and utilize the traditional Lookup function.
+  - Explore the advanced capabilities of Xlookup for more versatile lookup operations.
+  - Master the Hookup function for complex data retrieval tasks.
+- **Match and Index:**
+  - Learn how to use the Match function to locate the position of a value in a range.
+  - Understand the Index function and its application in retrieving values from a specific location in a table or range.
+- **Offset Function:**
+  - Explore the dynamic capabilities of the Offset function for flexible data manipulation.
 
-### Week 3: Data Analysis
+## 2: IF Functions
+- **IF Function:**
+  - Master the basic IF function for conditional statements.
+  - Learn how to use logical operators with the IF function.
+- **Nested IF:**
+  - Understand and implement nested IF functions for more complex conditional logic.
+- **IFAND and IFOR:**
+  - Explore the IFAND and IFOR functions for handling multiple conditions efficiently.
 
-| Topics |
-|---|
-| PivotTables and advanced techniques |
-| Power Query for data transformation |
-| Data Validation with custom rules |
+## 3: Advanced Pivot Tables
+- **Interactive Dashboards:**
+  - Create dynamic and interactive dashboards using advanced pivot table techniques.
+- **Sorting and Filtering Functions:**
+  - Sort data on multiple columns using custom lists and advanced sorting techniques.
+  - Utilize the Sort and Sortby functions for precise data organization.
+  - Learn how to extract unique values from a dataset using the Unique function.
+  - Implement dynamic sorting using the Sort function.
 
-### Week 3: Conditional Formatting and Advanced Charting
+##  4: Date and Time Functions
+- **Today and Now Functions:**
+  - Understand how to use the Today and Now functions to retrieve current date and time.
+- **Workday and Workdays.intl:**
+  - Calculate workdays and understand international workday conventions using Workday and Workdays.intl functions.
+- **Networkdays and Networkdays.intl:**
+  - Calculate the number of working days between two dates using Networkdays and Networkdays.intl functions.
+- **Other Date and Time Functions:**
+  - Explore functions such as Datedif, EoMonth, Edate for advanced date and time calculations.
 
-| Topics |
-|---|
-| Custom conditional formatting rules |
-| Color scales and icon sets |
-| Combo charts and trendlines |
-| Sparklines for data visualization |
+##  5: CSE Array
+- Understand and utilize CSE Array formulas for complex calculations and array operations.
 
-### Week 4: Macros and VBA
+## 6: Power Pivot
+- Comprehensive coverage of Power Pivot functionalities for data modeling, analysis, and reporting.
 
-| Topics |
-|---|
-| Introduction to VBA |
-| Recording and running macros |
-| Writing and editing VBA code |
-| Automating repetitive tasks |
+## 7: Power Query
+- In-depth exploration of Power Query for data transformation and data preparation tasks.
 
-### Week 5: Advanced Data Analysis and Collaborative Features
+## 8: Macros and VBA
+- Introduction to macros and VBA (Visual Basic for Applications) for automating tasks and extending Excel's capabilities.
 
-| Topics |
-|---|
-| Data Tables and What-If Analysis |
-| Goal Seek and Solver |
-| Collaborative features: Track Changes, Sharing, and Protection |
-| Overview of Excel Add-ins: Power Pivot, Power View, Power Map |
+##  9: Text Functions
+- Learn various text functions for manipulating and analyzing text data within Excel.
 
-## Evaluation and Assessments:
-- Weekly assignments and practical exercises
-- Mid-term project incorporating learned skills
-- Final project: Develop an advanced Excel solution or automation tool
+## 10: Financial Functions
+- Explore a range of financial functions available in Excel for financial analysis and modeling.
+
 
 ## Recommended Resources:
 - [Textbooks and online resources](#)
