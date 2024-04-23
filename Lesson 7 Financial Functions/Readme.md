@@ -575,3 +575,125 @@ Year 5: 20% * (Book Value at End of Year 4) = $4,096
 ```
 ## Output:
 The output of the calculation will be the depreciation expense for each period using the Fixed Declining Balance Depreciation method.
+
+# AVERAGE (Calculates the Average of a Range of Data)
+
+## Definition:
+
+- The AVERAGE function in Excel calculates the arithmetic mean (average) of a range of numbers. It adds up all the numbers in the range and divides the sum by the count of numbers in the range.
+
+## Syntax:
+
+```excel
+=AVERAGE(number1, [number2], ...)
+```
+number1, number2, ...: The numbers or cell references containing the numeric data for which you want to calculate the average.
+## Example:
+Suppose you have a range of numbers from A1 to A5 (10, 20, 30, 40, 50). To calculate the average of these numbers:
+
+```excel
+
+=AVERAGE(A1:A5)
+```
+This formula will return the result: 30.
+## Output:
+The output of the AVERAGE function will be the average (arithmetic mean) of the numbers in the specified range.
+
+
+
+# STDEV (Calculates the Standard Deviation of a Range of Data)
+
+## Definition:
+
+- The STDEV function in Excel calculates the standard deviation of a sample of data. It measures the dispersion or variability of the data points from the mean (average) of the data set.
+
+## Syntax:
+
+```excel
+=STDEV(number1, [number2], ...)
+```
+number1, number2, ...: The numbers or cell references containing the numeric data for which you want to calculate the standard deviation.
+## Example:
+Suppose you have a range of numbers from A1 to A5 (10, 20, 30, 40, 50). To calculate the standard deviation of these numbers:
+
+```excel
+
+=STDEV(A1:A5)
+```
+This formula will return the result: 15.81 (approximately).
+## Output:
+The output of the STDEV function will be the standard deviation of the numbers in the specified range.
+
+
+
+# VAR (Calculates the Variance of a Sample of Data)
+
+## Definition:
+
+- The VAR function in Excel calculates the variance of a sample of data. It measures the average squared deviations from the mean (average) of the data set.
+
+## Syntax:
+
+```excel
+=VAR(number1, [number2], ...)
+```
+number1, number2, ...: The numbers or cell references containing the numeric data for which you want to calculate the variance.
+## Example:
+Suppose you have a range of numbers from A1 to A5 (10, 20, 30, 40, 50). To calculate the variance of these numbers:
+
+```excel
+
+=VAR(A1:A5)
+```
+This formula will return the result: 250.
+## Output:
+The output of the VAR function will be the variance of the numbers in the specified range.
+
+
+# MAX (Returns the Largest Value in a Set of Values)
+
+## Definition:
+
+- The MAX function in Excel returns the largest value from a set of numeric values.
+
+## Syntax:
+
+```excel
+=MAX(number1, [number2], ...)
+```
+number1, number2, ...: The numbers or cell references containing the numeric data from which you want to find the largest value.
+## Example:
+Suppose you have a range of numbers from A1 to A5 (10, 20, 30, 40, 50). To find the largest value from these numbers:
+
+```excel
+
+=MAX(A1:A5)
+```
+This formula will return the result: 50.
+## Output:
+The output of the MAX function will be the largest value from the specified range of numbers.
+sql
+
+
+# MIN (Returns the Smallest Value in a Set of Values)
+
+## Definition:
+
+- The MIN function in Excel returns the smallest value from a set of numeric values.
+
+## Syntax:
+
+```excel
+=MIN(number1, [number2], ...)
+```
+number1, number2, ...: The numbers or cell references containing the numeric data from which you want to find the smallest value.
+## Example:
+Suppose you have a range of numbers from A1 to A5 (10, 20, 30, 40, 50). To find the smallest value from these numbers:
+
+```excel
+
+=MIN(A1:A5)
+```
+This formula will return the result: 10.
+### Output:
+The output of the MIN function will be the smallest value from the specified range of numbers.
